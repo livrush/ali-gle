@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+  (function() {
+    var cx = '015179888997701780015:mucxlpfvmtc';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div class="main" ng-init="searchBox()">
+  <img src="Aligle.png" id="flyingEagle"/>
+  <h3>{{ quote }}</h3>
+  <h2>Google it!</h2>
+  <gcse:search></gcse:search>
+  <br>
+  <!-- <button type="submit" ng-click="reset()">I still need help</button> -->
+</div>

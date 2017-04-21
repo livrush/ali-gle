@@ -1,0 +1,168 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: armalite;
+  src: url(../fonts/armalite.ttf);
+}
+@keyframes fly {
+  0% {
+    top: 5%;
+    left: 5%;
+  }
+  25% {
+    top: 60%;
+    left: 80%;
+  }
+  50% {
+    top: 60%;
+    left: 5%;
+    transform: scaleX(-1);
+  }
+  75% {
+    top: 5%;
+    left: 80%;
+  }
+  100% {
+    top: 5%;
+    left: 5%;
+  }
+}
+/* line 19, ../sass/style.scss */
+html {
+  background: #aaf;
+  background: linear-gradient(to bottom right, #aaf, #fff);
+  height: 100%;
+}
+
+/* line 25, ../sass/style.scss */
+body {
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* line 32, ../sass/style.scss */
+.main {
+  width: 600px;
+  margin: auto;
+}
+
+/* line 37, ../sass/style.scss */
+#eagle {
+  animation-name: zoomInDown;
+  animation-duration: 2000ms;
+}
+
+/* line 42, ../sass/style.scss */
+.gsc-control-cse {
+  background: transparent;
+}
+
+/* line 46, ../sass/style.scss */
+#flyingEagle {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  animation-name: fly;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+/* line 57, ../sass/style.scss */
+.eagle:hover {
+  animation-name: swing;
+  animation-duration: 500ms;
+}
+
+/* line 63, ../sass/style.scss */
+.header, h1, h2, h3 {
+  font-family: armalite;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+}
+
+/* line 68, ../sass/style.scss */
+h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 150px;
+}
+
+/* line 75, ../sass/style.scss */
+h2 {
+  font-size: 4em;
+}
+
+/* line 80, ../sass/style.scss */
+h3 {
+  font-size: 3em;
+}
+
+/* line 85, ../sass/style.scss */
+.input, input, button {
+  font-size: 40px;
+}
+
+/* line 89, ../sass/style.scss */
+input {
+  border: none;
+  border-bottom: 5px solid #bbb;
+  margin-right: 15px;
+  background: transparent;
+  color: #bbb;
+}
+/* line 96, ../sass/style.scss */
+input:focus {
+  outline: 0;
+}
+
+/* line 101, ../sass/style.scss */
+button {
+  border: none;
+  border-radius: 5px;
+  font-family: armalite;
+  background: none;
+  padding: 6px 16px;
+}
+/* line 108, ../sass/style.scss */
+button:focus {
+  outline: 0;
+}
+/* line 111, ../sass/style.scss */
+button:hover {
+  background: #bbb;
+}
+/* line 114, ../sass/style.scss */
+button:active {
+  background: #aaa;
+}
+
+/* line 119, ../sass/style.scss */
+p {
+  opacity: 0.5;
+}
+
+/* line 123, ../sass/style.scss */
+audio {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+
+/* line 129, ../sass/style.scss */
+footer {
+  font-family: helvetica;
+  width: 99%;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  background: #eee;
+}
+/* line 137, ../sass/style.scss */
+footer a {
+  font-weight: bold;
+  color: #aaa;
+}
