@@ -1,7 +1,7 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-
+@import 'variables';
 
  @font-face {
    font-family: armalite;
@@ -17,8 +17,10 @@
  }
 
  html {
-   background: #aaf;
-   background: linear-gradient(to bottom right, #aaf, #fff);
+   background-color: $light-blue;
+   background-color: linear-gradient(to bottom right, $light-blue, $white);
+   background-image: url('../../images/explosion-bg.jpg');
+   background-size: cover;
    height: 100%;
  }
 
@@ -27,11 +29,16 @@
    margin-top: 25px;
    text-align: center;
    overflow-x: hidden;
+   color: $text-dark;
  }
 
  .main {
-   width: 600px;
+   width: 80%;
    margin: auto;
+ }
+
+ .left {
+   text-align: left;
  }
 
  #eagle {
@@ -62,14 +69,16 @@
 
 .header {
    font-family: armalite;
-   text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+   text-shadow: 1px 1px 2px $white, 0 0 1em $white, 0 0 0.2em $white;
+   margin-bottom: 25px;
  }
 
  h1 {
    @extend .header;
    font-size: 5em;
    position: absolute;
-   top: 150px;
+   top: 200px;
+   left: 20%;
  }
 
  h2 {
@@ -84,35 +93,35 @@
 
 .input {
    font-size: 40px;
+   &:focus {
+     outline:0;
+   }
  }
 
  input {
    @extend .input;
    border: none;
-   border-bottom: 5px solid #bbb;
+   border-bottom: 5px solid $text-dark;
    margin-right: 15px;
    background: transparent;
-   color: #bbb;
-   &:focus {
-     outline:0;
+   color: $text-dark;
+   &::placeholder {
+     color: $white;
    }
  }
 
  button {
    @extend .input;
+   @extend .header;
    border: none;
    border-radius: 5px;
-   font-family: armalite;
    background: none;
    padding: 6px 16px;
-   &:focus {
-     outline:0;
-   }
    &:hover {
-     background: #bbb;
+     color: $text-light;
    }
    &:active {
-     background: #aaa;
+     color: $text-light2;
    }
  }
 
@@ -133,9 +142,10 @@
    padding: 20px;
    position: absolute;
    bottom: 0px;
-   background: #eee;
+   color: $text-light;
+   background: $black;
    a {
      font-weight: bold;
-     color: #aaa;
+     color: $white;
    }
  }

@@ -1,6 +1,75 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 @font-face {
   font-family: armalite;
   src: url(../fonts/armalite.ttf);
@@ -30,37 +99,45 @@
 }
 /* line 19, ../sass/style.scss */
 html {
-  background: #aaf;
-  background: linear-gradient(to bottom right, #aaf, #fff);
+  background-color: #aaf;
+  background-color: linear-gradient(to bottom right, #aaf, #fff);
+  background-image: url("../../images/explosion-bg.jpg");
+  background-size: cover;
   height: 100%;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 body {
   margin: 0;
   margin-top: 25px;
   text-align: center;
   overflow-x: hidden;
+  color: #111;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .main {
-  width: 600px;
+  width: 80%;
   margin: auto;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
+.left {
+  text-align: left;
+}
+
+/* line 44, ../sass/style.scss */
 #eagle {
   animation-name: zoomInDown;
   animation-duration: 2000ms;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .gsc-control-cse {
   background: transparent;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 #flyingEagle {
   position: absolute;
   width: 15%;
@@ -71,87 +148,88 @@ body {
   z-index: -1;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .eagle:hover {
   animation-name: swing;
   animation-duration: 500ms;
 }
 
-/* line 63, ../sass/style.scss */
-.header, h1, h2, h3 {
+/* line 70, ../sass/style.scss */
+.header, h1, h2, h3, button {
   font-family: armalite;
   text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  margin-bottom: 25px;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 h1 {
   font-size: 5em;
   position: absolute;
-  top: 150px;
+  top: 200px;
+  left: 20%;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 h2 {
   font-size: 4em;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 h3 {
   font-size: 3em;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .input, input, button {
   font-size: 40px;
 }
-
-/* line 89, ../sass/style.scss */
-input {
-  border: none;
-  border-bottom: 5px solid #bbb;
-  margin-right: 15px;
-  background: transparent;
-  color: #bbb;
-}
 /* line 96, ../sass/style.scss */
-input:focus {
+.input:focus, input:focus, button:focus {
   outline: 0;
 }
 
 /* line 101, ../sass/style.scss */
+input {
+  border: none;
+  border-bottom: 5px solid #111;
+  margin-right: 15px;
+  background: transparent;
+  color: #111;
+}
+/* line 108, ../sass/style.scss */
+input::placeholder {
+  color: #fff;
+}
+
+/* line 113, ../sass/style.scss */
 button {
   border: none;
   border-radius: 5px;
-  font-family: armalite;
   background: none;
   padding: 6px 16px;
 }
-/* line 108, ../sass/style.scss */
-button:focus {
-  outline: 0;
-}
-/* line 111, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 button:hover {
-  background: #bbb;
+  color: #bbb;
 }
-/* line 114, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 button:active {
-  background: #aaa;
+  color: #aaa;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 p {
   opacity: 0.5;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 audio {
   opacity: 0;
   height: 0px;
   width: 0px;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 footer {
   font-family: helvetica;
   width: 99%;
@@ -159,10 +237,11 @@ footer {
   padding: 20px;
   position: absolute;
   bottom: 0px;
-  background: #eee;
+  color: #bbb;
+  background: #000;
 }
-/* line 137, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 footer a {
   font-weight: bold;
-  color: #aaa;
+  color: #fff;
 }

@@ -1,4 +1,4 @@
-![image](eagle-explosion.png)
+![image](images/eagle-explosion.png)
 
 Ever get stuck while developing? Never fear! The Ali-gle is here!
 
