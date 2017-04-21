@@ -1,10 +1,10 @@
 const router = function ($routeProvider, $httpProvider) {
   $routeProvider
     .when('/home', {
-      templateUrl: 'home.html',
+      templateUrl: 'views/home.html',
     })
     .when('/search', {
-      templateUrl: 'search.html',
+      templateUrl: 'views/search.html',
     })
     .otherwise({
       redirectTo: '/home',
@@ -54,7 +54,7 @@ angular.module('main-Ctrl', [])
     if (!$scope.quote) {
       $location.path('home');
     };
-    
+
     $scope.bug = null;
     $scope.quote = null;
     $scope.answer = false;

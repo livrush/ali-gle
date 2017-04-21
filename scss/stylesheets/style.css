@@ -101,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html {
   background-color: #aaf;
   background-color: linear-gradient(to bottom right, #aaf, #fff);
-  background-image: url("../../images/explosion-bg.jpg");
+  background-image: url("../../assets/explosion-bg.jpg");
   background-size: cover;
   height: 100%;
 }
