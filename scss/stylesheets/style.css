@@ -193,43 +193,44 @@ input {
   border: none;
   border-bottom: 5px solid #111;
   margin-right: 15px;
-  background: transparent;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #111;
 }
-/* line 108, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 input::placeholder {
-  color: #fff;
+  color: #555;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 button {
   border: none;
   border-radius: 5px;
   background: none;
   padding: 6px 16px;
 }
-/* line 120, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 button:hover {
   color: #bbb;
 }
-/* line 123, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 button:active {
   color: #aaa;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 p {
   opacity: 0.5;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 audio {
   opacity: 0;
   height: 0px;
   width: 0px;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 footer {
   font-family: helvetica;
   width: 99%;
@@ -240,7 +241,7 @@ footer {
   color: #bbb;
   background: #000;
 }
-/* line 147, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 footer a {
   font-weight: bold;
   color: #fff;
