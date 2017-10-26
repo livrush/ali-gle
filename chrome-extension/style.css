@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+html {
+  line-height: 1;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+
+a img {
+  border: none;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: armalite;
+  src: url(./armalite.ttf);
+}
+@keyframes fly {
+  0% {
+    top: 5%;
+    left: 5%;
+  }
+  25% {
+    top: 60%;
+    left: 80%;
+  }
+  50% {
+    top: 60%;
+    left: 5%;
+    transform: scaleX(-1);
+  }
+  75% {
+    top: 5%;
+    left: 80%;
+  }
+  100% {
+    top: 5%;
+    left: 5%;
+  }
+}
+
+html {
+  background-color: #aaf;
+  background-color: linear-gradient(to bottom right, #aaf, #fff);
+  background-image: url("../../assets/explosion-bg.gif");
+  background-size: cover;
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+  overflow-x: hidden;
+  color: #111;
+}
+
+
+.main {
+  width: 450px;
+  margin: auto;
+}
+
+
+.left {
+  text-align: left;
+}
+
+
+#eagle {
+  position: absolute;
+  right: 0;
+  animation-name: zoomInDown;
+  animation-duration: 2000ms;
+}
+
+
+.gsc-control-cse {
+  background: transparent;
+}
+
+
+#flyingEagle {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  animation-name: fly;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+.eagle {
+  height: 350px;
+}
+
+
+.eagle:hover {
+  animation-name: swing;
+  animation-duration: 500ms;
+}
+
+
+.header, h1, h2, h3, button {
+  font-family: armalite;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  margin-bottom: 25px;
+}
+
+
+.title {
+  font-size: 5em;
+  position: absolute;
+  top: 200px;
+}
+
+
+h2 {
+  font-size: 4em;
+}
+
+
+h3 {
+  font-size: 3em;
+}
+
+
+.input, input, button {
+  font-size: 40px;
+}
+
+.input:focus, input:focus, button:focus {
+  outline: 0;
+}
+
+
+input {
+  border: none;
+  border-bottom: 5px solid #111;
+  margin-right: 15px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #111;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+
+button {
+  border: none;
+  border-radius: 5px;
+  background: none;
+  padding: 6px 16px;
+}
+
+button:hover {
+  color: #bbb;
+}
+
+button:active {
+  color: #aaa;
+}
+
+
+p {
+  opacity: 0.5;
+}
+
+
+audio {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+
+.search-bar {
+  width: 500px;
+  margin: auto;
+}
+
+.search-bar .cse .gsc-control-cse,
+.search-bar .gsc-control-cse {
+  background: transparent;
+  border: none;
+}
+
+
+footer {
+  font-family: helvetica;
+  width: 99%;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  color: #bbb;
+  background: #000;
+}
+
+footer a {
+  font-weight: bold;
+  color: #fff;
+}
